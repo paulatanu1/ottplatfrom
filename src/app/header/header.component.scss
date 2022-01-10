@@ -1,0 +1,366 @@
+@import "../../styles.scss";
+// Header part Start
+.header_black{
+    width: 100%;
+    background:#4F575B;
+    box-shadow: 1px 7px 11px rgba(0, 0, 0, 0.25);
+    padding: 20px 10px;
+    justify-content: space-between;
+    display: flex;
+    position:fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.header_black .logo-section{
+    /* box-shadow: 2px 4px 6px rgb(0 0 0 / 15%), -2px -2px 12px rgb(255 255 255 / 8%); */
+    width: 140px;
+    padding: 2px;
+}
+
+.main_header .navbar{
+    padding: 0;
+}
+.header_black .nav_manu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_black .nav_manu ul{
+    display: flex;
+    margin: 0;
+}
+.header_black .nav_manu ul li{
+   text-decoration: none;
+   margin-left: 15px;
+}
+
+.header_black .nav_manu ul li a{
+    display: flex;
+    align-items: center;
+}
+
+.header_black .nav_manu ul li a:hover{
+    color: #c82424;
+    transition: all 0.3s ease;
+}
+
+
+.menu{
+    background: #4F575B;
+   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15), -2px -2px 12px rgba(255, 255, 255, 0.08);
+    width: 105px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border:1px solid transparent;
+}
+
+.menu:hover{
+    border:1px solid #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu a{
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff
+}
+
+.menu a:hover{
+    padding-left: 2px;
+    transition: all 0.5s ease-in;
+}
+
+.menu a span{
+    font-size: 14px;
+    display: none
+}
+
+.menu a:hover span{
+    padding-right: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+
+
+.log{
+    background: #4F575B;
+   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15), -2px -2px 12px rgba(255, 255, 255, 0.08);
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border:1px solid transparent;
+}
+
+.log:hover{
+    border:1px solid #ffffff;
+}
+
+.log a{
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff; 
+    display: flex;
+    align-items: center;
+}
+
+.log a:hover{
+    padding-left: 2px;
+    transition: all 0.5s ease-in;
+}
+
+.log a span{
+    font-size: 14px;
+   
+    display: none
+}
+
+.log a:hover span{
+    padding-right: 5px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.subscribe{
+    background: #C82424;
+   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15), -2px -2px 12px rgba(255, 255, 255, 0.08);
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.subscribe:hover{
+    background: #951E1E;
+    transition:all 0.5s ease;
+}
+
+/* .subscribe::before{
+        content: '';
+        right: 0;
+        bottom: 0px;
+        transition: all 0.3s ease;
+        height: 2px;
+        width: 0;
+        position: absolute;
+        background: #ffffff;
+
+} */
+.subscribe::after{
+    content: '';
+    left: 0 !important;
+    bottom: 0px;
+    transition: all 0.5s ease;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    background: #ffffff;
+    transition: all 0.5s ease;
+
+}
+
+.subscribe:hover::after{
+    width: 100%;
+    left: 100%;
+}
+
+
+.subscribe:hover::after{
+    content: '';
+    border-bottom: 1px solid #000;
+    left: 100%;
+    transition: all 0.3s ease;
+}
+
+.subscribe a{
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.subscribe a:hover{
+    color: #ffffff !important;
+}
+
+
+/* Header Part END */
+
+
+// Modal Section
+
+
+::ng-deep .modal-dialog .modal-content{
+    border: none;
+}
+::ng-deep .modal-dialog .modal-content .modal-footer{
+    transition: all 0.5s ease-in-out;
+}
+
+::ng-deep .modal-dialog .modal-content .modal-footer .btn{
+    margin: 0 auto;
+    margin-bottom: 15px !important;
+    margin-top: 15px !important;
+    box-shadow: -12px -12px 31px rgb(255 255 255 / 3%), 12px 12px 18px rgb(0 0 0 / 47%);
+    color: #ffffff;
+}
+
+.custom-head{
+    padding: 0 !important;
+    background: #212426;
+    border: none;
+}
+.custom-head button span{
+    color: rgba(249, 211, 180, 0.4);
+    margin-right: 15px;
+}
+
+.plan-bg{
+    background: #212426;
+}
+
+.select-plan-section{
+    padding: 10px;
+}
+
+.plan-inner{
+//     background: linear-gradient(122.53deg, rgba(0, 0, 0, 0) 23.69%, rgba(0, 0, 0, 0.19) 86.56%), linear-gradient(108.05deg, #212426 7.99%, #212426 79.1%);
+// box-shadow: -62px -62px 116px rgba(255, 255, 255, 0.04), 62px 62px 132px rgba(0, 0, 0, 0.25);
+// border-radius: 56px;
+
+// background: linear-gradient(103.13deg, rgba(255, 255, 255, 0.028) 7.54%, rgba(0, 0, 0, 0) 96.87%), #212426;
+// border: 4px solid rgba(0, 0, 0, 0.05);
+// box-sizing: border-box;
+box-shadow: -12px -12px 31px rgba(255, 255, 255, 0.05), 12px 12px 18px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.plan-a{
+    width: 45%;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+
+.plan-a h4{
+    color: rgba(249, 211, 180, 0.4);
+
+}
+
+.plan-a p{
+    color: #ffffff;
+}
+
+.plan-a h5{
+    color: #ffffff;
+}
+
+.plan-a h5 span{
+    color: #C82424;
+}
+
+.plan-a h5 span i{
+    font-size: 16px;
+}
+
+
+
+.custom-foot{
+    padding: 0 !important;
+    background: #212426;
+    border: none;
+}
+
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    width: 190px;
+    height: 170px;
+    right: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 4px solid rgba(0, 0, 0, 0.0005);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container1:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container1 input:checked ~ .checkmark {
+    background-color: #C82424;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container1 input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container1 .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

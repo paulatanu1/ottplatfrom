@@ -1,0 +1,22 @@
+.about-us-body{
+    margin-top: 83px !important;
+    width: 500px;
+    margin: 0 auto;
+}
+
+input.ng-invalid.ng-touched,
+select.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+
+.saveable{
+    color: red;
+}
+
+.modified{
+    font-style: italic;
+}
+
+.specia{
+    background: chartreuse;
+}

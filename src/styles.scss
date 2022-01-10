@@ -1,0 +1,413 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../src/assets/fonts/icomoon.eot?e6tbmm');
+    src:  url('../src/assets/fonts/icomoon.eot?e6tbmm#iefix') format('embedded-opentype'),
+      url('../src/assets/fonts/icomoon.ttf?e6tbmm') format('truetype'),
+      url('../src/assets/fonts/icomoon.woff?e6tbmm') format('woff'),
+      url('../src/assets/fonts/icomoon.svg?e6tbmm#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-android:before {
+    content: "\eac0";
+  }
+
+  .icon-appleinc:before {
+    content: "\eabe";
+  }
+
+  .icon-calendar-check-o:before {
+    content: "\f274";
+  }
+
+  .icon-github-square:before {
+    content: "\f092";
+  }
+
+  .icon-linkedin-square:before {
+    content: "\f08c";
+  }
+
+  .icon-map-marker:before {
+    content: "\f041";
+  }
+
+  .icon-check:before {
+    content: "\f00c";
+  }
+
+  .icon-visa:before {
+    content: "\e902";
+    color: #142787;
+  }
+
+  .icon-mestro .path1:before {
+    content: "\e903";
+    color: #ed1b2d;
+  }
+  .icon-mestro .path2:before {
+    content: "\e904";
+    color: #0086c7;
+    margin-left: -1em;
+  }
+  .icon-mestro .path3:before {
+    content: "\e905";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path4:before {
+    content: "\e906";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path5:before {
+    content: "\e907";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path6:before {
+    content: "\e908";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path7:before {
+    content: "\e909";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path8:before {
+    content: "\e90a";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path9:before {
+    content: "\e90b";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path10:before {
+    content: "\e90c";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path11:before {
+    content: "\e90d";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path12:before {
+    content: "\e90e";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path13:before {
+    content: "\e90f";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path14:before {
+    content: "\e910";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path15:before {
+    content: "\e911";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path16:before {
+    content: "\e912";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path17:before {
+    content: "\e913";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path18:before {
+    content: "\e914";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path19:before {
+    content: "\e915";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path20:before {
+    content: "\e916";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+  .icon-mestro .path21:before {
+    content: "\e917";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path22:before {
+    content: "\e918";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path23:before {
+    content: "\e919";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path24:before {
+    content: "\e91a";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path25:before {
+    content: "\e91b";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path26:before {
+    content: "\e91c";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path27:before {
+    content: "\e91d";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path28:before {
+    content: "\e91e";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path29:before {
+    content: "\e91f";
+    color: #0086c7;
+    margin-left: -1em;
+  }
+  .icon-mestro .path30:before {
+    content: "\e920";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path31:before {
+    content: "\e921";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path32:before {
+    content: "\e922";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path33:before {
+    content: "\e923";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path34:before {
+    content: "\e924";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path35:before {
+    content: "\e925";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path36:before {
+    content: "\e926";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path37:before {
+    content: "\e927";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path38:before {
+    content: "\e928";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path39:before {
+    content: "\e929";
+    color: #fff;
+    margin-left: -1em;
+  }
+  .icon-mestro .path40:before {
+    content: "\e92a";
+    color: #ed1b2d;
+    margin-left: -1em;
+  }
+
+  .icon-rupay .path1:before {
+    content: "\e92e";
+    color: #2e3187;
+  }
+  .icon-rupay .path2:before {
+    content: "\e92f";
+    color: #2e3187;
+    margin-left: -1em;
+  }
+  .icon-rupay .path3:before {
+    content: "\e930";
+    color: #2e3187;
+    margin-left: -1em;
+  }
+  .icon-rupay .path4:before {
+    content: "\e931";
+    color: #2e3187;
+    margin-left: -1em;
+  }
+  .icon-rupay .path5:before {
+    content: "\e932";
+    color: #2e3187;
+    margin-left: -1em;
+  }
+  .icon-rupay .path6:before {
+    content: "\e933";
+    color: #278043;
+    margin-left: -1em;
+  }
+  .icon-rupay .path7:before {
+    content: "\e934";
+    color: #f06019;
+    margin-left: -1em;
+  }
+  .icon-rupay .path8:before {
+    content: "\e935";
+    color: #100f0d;
+    margin-left: -1em;
+  }
+  .icon-rupay .path9:before {
+    content: "\e936";
+    color: #100f0d;
+    margin-left: -1em;
+  }
+  .icon-rupay .path10:before {
+    content: "\e937";
+    color: #100f0d;
+    margin-left: -1em;
+  }
+
+  .icon-upi .path1:before {
+    content: "\e92b";
+    color: #097939;
+  }
+  .icon-upi .path2:before {
+    content: "\e92c";
+    color: #ed752e;
+    margin-left: -1em;
+  }
+  .icon-upi .path3:before {
+    content: "\e92d";
+    color: #747474;
+    margin-left: -1em;
+  }
+  
+  .icon-facebook2:before {
+    content: "\ea91";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-whatsapp:before {
+    content: "\ea93";
+  }
+  .icon-enter:before {
+    content: "\ea13";
+  }
+  .icon-info:before {
+    content: "\ea0c";
+  }
+  .icon-home:before {
+    content: "\e900";
+  }
+  .icon-enter:before {
+    content: "\ea13";
+  }
+
+  .icon-inr:before {
+    content: "\e901";
+  }
+
+
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Overlock', cursive;
+}
+
+p{
+    margin: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0 !important;
+}
+
+body::-webkit-scrollbar-track{
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+body::-webkit-scrollbar{
+  width: 4px;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+body::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+body::-webkit-scrollbar-track{
+  background-color: #4F575B;
+}
+
+body:hover::-webkit-scrollbar{
+  background-color: #4F575B;
+}
+
+body:hover::-webkit-scrollbar-thumb{
+  background-color: #414042;
+}
+
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+

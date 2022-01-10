@@ -1,0 +1,54 @@
+<app-header (planChoosen)="getPlan($event)"></app-header>
+<div class="payment-body">
+    <div class="payment-left-section">
+        <h3>Subscribe</h3>
+        <div class="detials-section">
+            <div class="plan-details">
+                <select [(ngModel)]="planType" (change)="getPlanDetails($event)">
+                    <!-- <option value="">Select</option> -->
+                    <option value="{{i}}" *ngFor="let plandetail of planDetails;let i = index;">{{plandetail.name}}</option>
+                    <!-- <option value="plan-b">FAMILY</option> -->
+                </select>
+            </div>
+            <div class="price-section">
+                <h4>INR <span>{{price}}</span> / year Price</h4>
+            </div>
+            <div class="plan-details-inner">
+                <div class="offer-1">
+                    <label class="plan-checkbox">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <h4>{{stream_device}} Simultaneous Stream</h4>
+                </div>
+                <div class="offer-1">
+                    <label class="plan-checkbox">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <h4>{{connect_device}} Connected Devices</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="payment-right-section">
+       <div class="payment-inner-right">
+        <ul ngbNav #nav="ngbNav" class="nav-tabs">
+            <li ngbNavItem>
+              <a ngbNavLink>Debit/Credit Card</a>
+              <ng-template ngbNavContent>
+                <div>
+                    <p>We Accept <i class=""></i> <i class=""></i></p>
+                </div>
+              </ng-template>
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>UPI/Wallet</a>
+              <ng-template ngbNavContent>Second content</ng-template>
+            </li>
+          </ul>
+          <div [ngbNavOutlet]="nav"></div>
+       </div>
+    </div>
+</div>
+<app-footer></app-footer>

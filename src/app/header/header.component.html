@@ -1,0 +1,56 @@
+<header class="main_header">
+    <div class="navbar">
+        <div class="header_black">
+            <div class="logo-section">
+                <img src="../../assets/images/Hoichoi-Logo_Red_140x40.png" class="img-fluid" alt="">
+            </div>
+            <div class="nav_manu">
+                <ul>
+                    <li [routerLink]="['/home']" class="menu"><a href="javascript:void(0)"><span class="icon-home"></span>Home</a></li>
+                    <li [routerLink]="['/about-us']" class="menu"><a href="javascript:void(0)"><span class="icon-info"></span>About Us</a></li>
+                    <li [routerLink]="['/reactive']" class="menu"><a href="javascript:void(0)"><span class="icon-info"></span>Reactive from</a></li>
+                    <li [routerLink]="['/login/signup']" class="log"><a href="javascript:void(0)"><span class="icon-enter"></span>Log In</a></li>
+                    <li class="subscribe"><a href="javascript:void(0)" (click)="open(mymodal)">SUBSCRIBE</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Subscribe Modal Section -->
+
+<ng-template #mymodal let-modal>
+    <div class="modal-header custom-head">
+      <!-- <h4 class="modal-title" id="modal-basic-title">Bootstrap Modal</h4> -->
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div class="modal-body plan-bg">
+      <div class="select-plan-section">
+            <div class="plan-inner">
+                <div class="plan-a" >
+                    <h4>Plan Name : <span>FAMILY</span></h4>
+                    <p>1 Year 2 Simultaneous Streams Connect to 8 Devices </p>
+                    <h5>INR : <span><i class="icon-inr"></i> 899</span></h5>
+                    <label class="container1">
+                        <input type="radio" [(ngModel)]="plantype" value="plan-b" name="plan">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="plan-a">
+                    <h4>Plan Name : <span>SOLO</span></h4>
+                    <p>1 Year 1 Simultaneous Stream Connect to 5 Devices</p>
+                    <h5>INR : <span><i class="icon-inr"></i> 599</span></h5>
+                    <label class="container1">
+                        <input type="radio" [(ngModel)]="plantype" value="plan-a"  name="plan">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+      </div>
+    </div>
+    <div class="modal-footer custom-foot">
+      <button (click)="modal.dismiss('Cross click');planDetailsEmit();" *ngIf="plantype !=''" class="btn btn-outline-dark" >{{btn_text1}}</button>
+    </div>
+  </ng-template>
