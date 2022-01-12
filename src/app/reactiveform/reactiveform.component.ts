@@ -9,9 +9,12 @@ import { FormControl, FormGroup,Validators } from '@angular/forms';
 export class ReactiveformComponent implements OnInit {
   myReactiveForm=new FormGroup(
     {
-      username:new FormControl('',Validators.required),
-      email:new FormControl('',Validators.required),
-      course:new FormControl('',Validators.required)
+      'userDetails':new FormGroup({
+        'username':new FormControl('',Validators.required),
+        'email':new FormControl('',[Validators.required,Validators.email]),
+      }),
+     
+      'course':new FormControl('',Validators.required)
     }
   )
   constructor() { }
