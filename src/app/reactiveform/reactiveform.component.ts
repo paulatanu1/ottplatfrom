@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup,Validators } from '@angular/forms';
+import { FormArray, FormControl, FormGroup,Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-reactiveform',
@@ -36,5 +36,6 @@ export class ReactiveformComponent implements OnInit {
   get course(){
     return this.myReactiveForm.get('course')
   }
+
 
 }
