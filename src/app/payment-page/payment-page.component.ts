@@ -12,6 +12,7 @@ export class PaymentPageComponent implements OnInit {
   stream_device:any='';
   connect_device:any='';
   planList:any='';
+  items:any=''
   constructor(private route:ActivatedRoute) { }
 
   planDetails:any=[
@@ -37,5 +38,20 @@ export class PaymentPageComponent implements OnInit {
     this.planType = this.planDetails[e.target.value].name;
     this.price = this.planDetails[e.target.value].price;
   }
+
+  dates:any=[
+    {month:'Jan',year:'2011'},
+    {month:'Feb',year:'2012'},
+    {month:'Mar',year:'2013'},
+    {month:'Apr',year:'2014'},
+    {month:'May',year:'2015'},
+    {month:'jun',year:'2016'},
+    {month:'Jul',year:'2017'},
+    {month:'Aug',year:'2018'},
+    {month:'Sep',year:'2019'},
+    {month:'Oct',year:'2020'},
+    {month:'Nov',year:'2021'},
+    {month:'Dec',year:'2022'},
+  ]
 
 }
