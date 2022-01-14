@@ -194,3 +194,74 @@
 .payment-inner-right ::ng-deep .nav-tabs{
     border: none;
 }
+
+.Payment-section .icon-section{
+    text-align: center;
+}
+
+.Payment-section .icon-section p{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.Payment-section .icon-section ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.Payment-section .icon-section ul li{
+    list-style: none;
+    margin: 0 5px;
+
+}
+
+.Payment-section .icon-section ul li span{
+    font-size: 45px;
+}
+
+.Payment-section .icon-section ul .rupay-icon{
+    margin-top: -11px;
+}
+
+.card-details .form-group label{
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+}
+.card-details .form-group input{
+    color: #ffffff;
+    padding: 0 5px;
+    box-shadow: inset 0px 4px 4px rgb(0 0 0 / 75%), inset -2px -2px 2px #4e5154;
+    background: linear-gradient( 
+320.66deg
+ , #4f575b 14.75%, #4a535c 84.81%);
+ width: 84%;
+    letter-spacing: 18px;
+    text-align: center;
+}
+.card-details .form-group input:focus{
+    outline: none;
+}
+
+.select-validity select{
+    margin-right: 10px;
+    box-shadow: inset 0px 4px 4px rgb(0 0 0 / 75%), inset -2px -2px 2px #4e5154;
+    background: linear-gradient( 
+320.66deg
+ , #4f575b 14.75%, #4a535c 84.81%);
+}
+
+.select-validity select:focus{
+    outline: none;
+}
+
+.forcvv{
+    width: 20% !important;
+    color: #ffffff;
+    letter-spacing:10px !important;
+}

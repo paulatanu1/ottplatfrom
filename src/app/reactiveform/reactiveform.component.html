@@ -2,6 +2,7 @@
     <div class="row">
         <div class="col-md-10">
             <form [formGroup]="myReactiveForm" (ngSubmit)="regForm()">
+              <div formGroupName="userDetails">
                 <div class="form-group">
                   <label for="username">User Name *</label>
                   <input type="text" class="form-control" id="username" placeholder="Enter Name" name="username"
@@ -14,6 +15,7 @@
                   formControlName="email">
                   <small class="text-danger" *ngIf="email && email.invalid && email.touched">Invalid User email</small>
                 </div>
+              </div>
                 <div class="form-group form-check p-0">
                   <label for="Course">Select Course</label>
                   <select  class="form-control" id="course" name="course" formControlName="course">
@@ -22,6 +24,14 @@
                       <option value="react">React</option>
                   </select>
                   <small class="text-danger" *ngIf="course && course.invalid && course.touched">Please select Course</small>
+                </div>
+                <div class="form-group" formArrayName="skills">
+                  <ng-container>
+                    <label for="email">Skils</label>
+                  <input type="text" class="form-control" id="email" placeholder="ADD Skill" name="skill" autocomplete="off">
+                  </ng-container>
+                  
+                  <button class="btn btn-success mt-3"><i>+</i>Add</button>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
