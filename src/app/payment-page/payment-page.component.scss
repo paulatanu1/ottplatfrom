@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 83px;
+    padding-bottom: 50px;
 }
 
 .payment-left-section{
@@ -241,7 +242,7 @@
 320.66deg
  , #4f575b 14.75%, #4a535c 84.81%);
  width: 84%;
-    letter-spacing: 18px;
+    letter-spacing: 2px;
     text-align: center;
 }
 .card-details .form-group input:focus{
@@ -264,4 +265,10 @@
     width: 20% !important;
     color: #ffffff;
     letter-spacing:10px !important;
+}
+
+.btn-position{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }

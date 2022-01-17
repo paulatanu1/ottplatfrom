@@ -15,11 +15,25 @@ import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { NgxSpinnerModule } from "ngx-spinner";
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { WatchlistComponent } from './watchlist/watchlist.component';
+import { MoviesComponent } from './movies/movies.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
-  imports:      [ BrowserModule, NgbModule,AppRoutingModule ,FormsModule,NgxSpinnerModule,ReactiveFormsModule],
-  declarations: [ AppComponent, HeaderComponent,MainContentComponent, FooterComponent, PaymentPageComponent, AboutUsComponent, SignupComponent, ReactiveformComponent ],
+  imports:      [ BrowserModule, NgbModule,AppRoutingModule ,FormsModule,NgxSpinnerModule,ReactiveFormsModule, BrowserAnimationsModule],
+  declarations: [
+     AppComponent,
+     HeaderComponent,
+     MainContentComponent, 
+     FooterComponent, 
+     PaymentPageComponent, 
+     AboutUsComponent, 
+     SignupComponent, 
+     ReactiveformComponent, 
+     WatchlistComponent, 
+     MoviesComponent, 
+    ],
   bootstrap:    [ AppComponent ],
   providers:    [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
