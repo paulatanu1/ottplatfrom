@@ -14,7 +14,11 @@ export class ReactiveformComponent implements OnInit {
         'email':new FormControl('',[Validators.required,Validators.email]),
       }),
      
-      'course':new FormControl('',Validators.required)
+      'course':new FormControl('',Validators.required),
+      'skills':new FormArray([
+        new FormControl(null),
+        new FormControl(null)
+      ])
     }
   )
   constructor() { }
