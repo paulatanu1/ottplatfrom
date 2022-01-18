@@ -107,28 +107,32 @@
             <div class="card">
                 <p>This is Laptop :)</p>
                 <h2>Laptop</h2>
-                <button class="btn btn-success">Select Product</button>
+                <button class="btn btn-success" (click)="onselectProduct('Laptop')">Select Product</button>
             </div>
             <div class="card">
                 <p>This is Mobile :)</p>
-                <h2>Laptop</h2>
-                <button class="btn btn-success">Select Product</button>
+                <h2>Mobile</h2>
+                <button class="btn btn-success" (click)="onselectProduct('Mobile')">Select Product</button>
             </div>
             <div class="card">
                 <p>This is Tv :)</p>
-                <h2>Laptop</h2>
-                <button class="btn btn-success">Select Product</button>
+                <h2>Tv</h2>
+                <button class="btn btn-success" (click)="onselectProduct('TV')">Select Product</button>
             </div>
             <div class="card">
                 <p>This is AC :)</p>
-                <h2>Laptop</h2>
-                <button class="btn btn-success">Select Product</button>
+                <h2>Ac</h2>
+                <button class="btn btn-success" (click)="onselectProduct('AC')">Select Product</button>
             </div>
         </div>
         <div class="col-md-12 bg-success text-center py-4 text-white">
-            <h3>Please Select Product</h3>
-            <h3>Laptop is Selected</h3>
-            <button class="btn btn-light mt-3">Add to Cart</button>
+            <h3 *ngIf="!productSelected">Please Select Product</h3>
+            <h3 *ngIf="productSelected">{{productName}} is Selected</h3>
+            <button class="btn btn-light mt-3" (click)="onaddProduct()">Add to Cart</button>
+        </div>
+        <div class=" col-md-12 alert alert-light border" *ngIf="cartProduct">
+            <p><strong class="text-success">{{cartProduct}}</strong>&nbsp; is selected and added in cart</p>
+
         </div>
     </div>
 </div>

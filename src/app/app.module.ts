@@ -18,6 +18,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { WatchlistComponent } from './watchlist/watchlist.component';
 import { MoviesComponent } from './movies/movies.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ThrillerComponent } from './thriller/thriller.component';
+import { RomanceComponent } from './romance/romance.component';
+import { ActionComponent } from './action/action.component';
+import { ComedyComponent } from './comedy/comedy.component';
+import { KidsComponent } from './kids/kids.component';
+import { DetactiveComponent } from './detactive/detactive.component';
 
 
 @NgModule({
@@ -32,7 +38,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
      SignupComponent, 
      ReactiveformComponent, 
      WatchlistComponent, 
-     MoviesComponent, 
+     MoviesComponent, ThrillerComponent, RomanceComponent, ActionComponent, ComedyComponent, KidsComponent, DetactiveComponent, 
     ],
   bootstrap:    [ AppComponent ],
   providers:    [],

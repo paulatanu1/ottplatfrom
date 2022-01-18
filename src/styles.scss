@@ -415,6 +415,10 @@ body:hover::-webkit-scrollbar-thumb{
     color: #ffffff !important;
 }
 
+.main_wrapper{
+  margin-top: 83px;
+}
+
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
