@@ -7,6 +7,12 @@ import { SignupComponent } from './login/signup/signup.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { MoviesComponent } from './movies/movies.component';
 import { WatchlistComponent } from './watchlist/watchlist.component';
+import { DetactiveComponent } from './detactive/detactive.component';
+import { RomanceComponent } from './romance/romance.component';
+import { ActionComponent } from './action/action.component';
+import { KidsComponent } from './kids/kids.component';
+import { ThrillerComponent } from './thriller/thriller.component';
+import { ComedyComponent } from './comedy/comedy.component';
 
 const routes: Routes = [
   { path: 'home', component: MainContentComponent },
@@ -18,7 +24,13 @@ const routes: Routes = [
   { path: 'login/signup', component:SignupComponent},
   {path:'movies', children:[
     {path:'',component:MoviesComponent},
-    {path:'watchlist', component:WatchlistComponent}
+    {path:'watchlist', component:WatchlistComponent},
+    {path: 'detactive', component:DetactiveComponent},
+    {path: 'romance', component:RomanceComponent},
+    {path: 'action', component:ActionComponent},
+    {path: 'kids', component:KidsComponent},
+    {path: 'thriller', component:ThrillerComponent},
+    {path: 'comedy', component:ComedyComponent}
   ]}
 ];
 

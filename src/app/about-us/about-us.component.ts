@@ -17,7 +17,10 @@ export class AboutUsComponent implements OnInit {
     username : '',
     email : '',
     course : '',
-  }
+  };
+  productSelected:boolean=false;
+  productName:string='';
+  cartProduct:any='';
 sampleArray:any=[{roll:1,name:'nabamita'},{roll:2,name:'atanu'},{roll:3,name:'dell'}];
   constructor() { }
 
@@ -59,6 +62,15 @@ sampleArray:any=[{roll:1,name:'nabamita'},{roll:2,name:'atanu'},{roll:3,name:'de
   };
   removeUser(i:any){
     this.users.splice(i, 1)
+  }
+
+  onselectProduct(product:any){
+    this.productSelected= true;
+    this.productName=product
+  }
+
+  onaddProduct(){
+    this.cartProduct = this.productName;
   }
 
 }
