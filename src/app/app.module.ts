@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -17,17 +18,21 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { WatchlistComponent } from './watchlist/watchlist.component';
 import { MoviesComponent } from './movies/movies.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ThrillerComponent } from './thriller/thriller.component';
 import { RomanceComponent } from './romance/romance.component';
 import { ActionComponent } from './action/action.component';
 import { ComedyComponent } from './comedy/comedy.component';
 import { KidsComponent } from './kids/kids.component';
 import { DetactiveComponent } from './detactive/detactive.component';
+import { ChildComponent } from './child/child.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { DesignutilityService } from './appServices/designutility.service';
+import { LoginPanelComponent } from './login-panel/login-panel.component';
+import { LoginComponent } from './login-panel/login/login.component';
 
 
 @NgModule({
-  imports:      [ BrowserModule, NgbModule,AppRoutingModule ,FormsModule,NgxSpinnerModule,ReactiveFormsModule, BrowserAnimationsModule],
+  imports:      [ BrowserModule, NgbModule,AppRoutingModule ,FormsModule,NgxSpinnerModule,ReactiveFormsModule, BrowserAnimationsModule,CarouselModule],
   declarations: [
      AppComponent,
      HeaderComponent,
@@ -38,10 +43,10 @@ import { DetactiveComponent } from './detactive/detactive.component';
      SignupComponent, 
      ReactiveformComponent, 
      WatchlistComponent, 
-     MoviesComponent, ThrillerComponent, RomanceComponent, ActionComponent, ComedyComponent, KidsComponent, DetactiveComponent, 
+     MoviesComponent, ThrillerComponent, RomanceComponent, ActionComponent, ComedyComponent, KidsComponent, DetactiveComponent, ChildComponent, LoginPanelComponent, LoginComponent, 
     ],
   bootstrap:    [ AppComponent ],
-  providers:    [],
+  providers:    [DesignutilityService],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }

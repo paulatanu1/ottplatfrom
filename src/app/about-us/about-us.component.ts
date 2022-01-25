@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { DesignutilityService } from '../appServices/designutility.service';
+// import { MessagesService } from '../appServices/message.service';
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
@@ -10,9 +12,9 @@ export class AboutUsComponent implements OnInit {
   defaultCourse='angular';
   username='';
   submited= false;
-  // uname:any='';
-  // name:any='';
-  // getdetais:any='';
+  product1='';
+  product2='';
+  PracticeTitle='';
   formData = {
     username : '',
     email : '',
@@ -22,9 +24,14 @@ export class AboutUsComponent implements OnInit {
   productName:string='';
   cartProduct:any='';
 sampleArray:any=[{roll:1,name:'nabamita'},{roll:2,name:'atanu'},{roll:3,name:'dell'}];
-  constructor() { }
+  constructor(private _msgService:DesignutilityService) { }
 
   ngOnInit(): void {
+
+    this.product1 = this._msgService.product1;
+    this.product2 = this._msgService.product2;
+    this.PracticeTitle = this._msgService.PracticeTitle;
+
   }
 
   currentClasses ={
@@ -72,5 +79,15 @@ sampleArray:any=[{roll:1,name:'nabamita'},{roll:2,name:'atanu'},{roll:3,name:'de
   onaddProduct(){
     this.cartProduct = this.productName;
   }
+  getProductName(e:any){
+    this.cartProduct = e;
+  }
 
+  // btnClick(){
+  //   const msgService = new MessagesService();
+  //   msgService.messageAlart()
+  // }
+  btnClick(){
+    this._msgService.messageAlart();
+  }
 }

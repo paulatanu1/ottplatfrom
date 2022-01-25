@@ -125,14 +125,25 @@
                 <button class="btn btn-success" (click)="onselectProduct('AC')">Select Product</button>
             </div>
         </div>
-        <div class="col-md-12 bg-success text-center py-4 text-white">
-            <h3 *ngIf="!productSelected">Please Select Product</h3>
-            <h3 *ngIf="productSelected">{{productName}} is Selected</h3>
-            <button class="btn btn-light mt-3" (click)="onaddProduct()">Add to Cart</button>
-        </div>
+        <app-child class="w-100" (addcart)="getProductName($event)" [productSelected]="productSelected" [productName]="productName"></app-child>
         <div class=" col-md-12 alert alert-light border" *ngIf="cartProduct">
             <p><strong class="text-success">{{cartProduct}}</strong>&nbsp; is selected and added in cart</p>
 
+        </div>
+        <h4>{{PracticeTitle}}</h4>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{product1}}</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button (click)="btnClick()" class="btn btn-success">call btn</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{product2}}</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button (click)="btnClick()" class="btn btn-success">call btn</button>
+            </div>
         </div>
     </div>
 </div>
