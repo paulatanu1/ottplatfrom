@@ -13,6 +13,8 @@ import { KidsComponent } from './kids/kids.component';
 import { ThrillerComponent } from './thriller/thriller.component';
 import { ComedyComponent } from './comedy/comedy.component';
 import { LoginPanelComponent } from './login-panel/login-panel.component'
+import { LoginComponent } from './login-panel/login/login.component';
+import { SignupComponent } from './login-panel/signup/signup.component';
 
 const routes: Routes = [
   { path: 'home', component: MainContentComponent },
@@ -21,7 +23,11 @@ const routes: Routes = [
   { path: 'Payment/:plan/:price/:stream_device/:connect_device', component: PaymentPageComponent },
   { path: 'about-us', component:AboutUsComponent},
   { path: 'reactive', component:ReactiveformComponent},
-  { path: 'login-panel', component:LoginPanelComponent},
+  { path: 'login-panel', children:[
+    { path:'' ,  component:LoginPanelComponent},
+    { path:'Login', component:LoginComponent},
+    { path:'Signup', component:SignupComponent}
+  ]},
   {path:'movies', children:[
     {path:'',component:MoviesComponent},
     {path:'watchlist', component:WatchlistComponent},
