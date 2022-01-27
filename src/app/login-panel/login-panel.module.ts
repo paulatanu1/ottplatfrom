@@ -5,6 +5,9 @@ import { LoginPanelRoutingModule } from './login-panel-routing.module';
 import { LoginPanelComponent } from './login-panel.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatStepperModule} from '@angular/material/stepper';
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { SignupComponent } from './signup/signup.component';
   ],
   imports: [
     CommonModule,
-    LoginPanelRoutingModule
+    LoginPanelRoutingModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatStepperModule
   ]
 })
 export class LoginPanelModule { }

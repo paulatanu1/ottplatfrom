@@ -1,9 +1,46 @@
 <div class="main_wrapper">
     <app-header></app-header>
-    <section class="content-wrapper">
-        <p>signup works!</p>
-        <button [routerLink]="['/login-panel/Login']">1st</button>
-        <button [routerLink]="['/login-panel/Signup']">2nd</button>
+    <section class="content-wrapper body_wrapper">
+        <div class="login-body">
+            <mat-tab-group animationDuration="1000ms">
+                <mat-tab label="First">
+                    <form class="example-form">
+                        <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Telephone</mat-label>
+                        <span matPrefix>+91 &nbsp;</span>
+                        <input type="tel" matInput placeholder="555-555-1234">
+                        <mat-icon matSuffix>mode_edit</mat-icon>
+                        </mat-form-field>
+                    </form>
+                    <button mat-raised-button color="warn" class="login-btn" [routerLink]="['/login-panel/Login']">Login</button>
+                    <div class="log-other">
+                        <p>or</p>
+
+                        <div class="options-log">
+                            <div class="top-option">
+                                <div class="fb-log">
+                                    <button mat-raised-button>Login with Facebook</button>
+                                </div>
+                                <div class="google-log">
+                                    <button mat-raised-button>Login with Google</button>
+                                </div>
+                            </div>
+                            <div class="bottom-option">
+                                <div class="apple-log">
+                                    <button mat-raised-button>Login with Apple</button>
+                                </div>
+                                <div class="email-log">
+                                    <button mat-raised-button>Login with Email</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Second">
+                    <button [routerLink]="['/login-panel/Signup']">2nd</button>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
     </section>
     <app-footer></app-footer>
 </div>

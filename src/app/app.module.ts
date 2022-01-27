@@ -29,10 +29,30 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { DesignutilityService } from './appServices/designutility.service';
 import { LoginPanelComponent } from './login-panel/login-panel.component';
 import { LoginComponent } from './login-panel/login/login.component';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+
 
 
 @NgModule({
-  imports:      [ BrowserModule, NgbModule,AppRoutingModule ,FormsModule,NgxSpinnerModule,ReactiveFormsModule, BrowserAnimationsModule,CarouselModule],
+  imports:      [
+     BrowserModule,
+      NgbModule,
+      AppRoutingModule ,
+      FormsModule,
+      NgxSpinnerModule,
+      ReactiveFormsModule, 
+      BrowserAnimationsModule,
+      CarouselModule,
+      MatStepperModule,
+      MatTabsModule,
+      MatInputModule,
+      MatIconModule,
+      MatButtonModule
+    ],
   declarations: [
      AppComponent,
      HeaderComponent,
@@ -43,7 +63,24 @@ import { LoginComponent } from './login-panel/login/login.component';
      SignupComponent, 
      ReactiveformComponent, 
      WatchlistComponent, 
-     MoviesComponent, ThrillerComponent, RomanceComponent, ActionComponent, ComedyComponent, KidsComponent, DetactiveComponent, ChildComponent, LoginPanelComponent, LoginComponent, 
+     MoviesComponent, 
+     ThrillerComponent, 
+     RomanceComponent, 
+     ActionComponent, 
+     ComedyComponent, 
+     KidsComponent, 
+     DetactiveComponent, 
+     ChildComponent, 
+     LoginPanelComponent, 
+     LoginComponent, 
+    ],
+    exports:[
+      BrowserAnimationsModule,
+      MatStepperModule,
+      MatTabsModule,
+      MatInputModule,
+      MatIconModule,
+      MatButtonModule
     ],
   bootstrap:    [ AppComponent ],
   providers:    [DesignutilityService],

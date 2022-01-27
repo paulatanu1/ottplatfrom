@@ -1,0 +1,84 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+.body_wrapper{
+    background: #4f575b;
+}
+
+.content-wrapper{
+    min-height: 100vh;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .login-body{
+      width: 600px;
+      margin: 0 auto;
+      padding-top: 50px;
+  }
+
+  .login-body::ng-deep .mat-tab-labels{
+      justify-content: center;
+  }
+
+  .login-body::ng-deep .mat-tab-label{
+    background: #4F575B;
+    box-shadow: 2px 4px 6px rgb(0 0 0 / 15%), -2px -2px 12px rgb(255 255 255 / 8%);
+    margin: 4px 10px;
+  }
+
+  .login-body::ng-deep .mat-tab-label-container{
+      padding-bottom: 1px;
+  }
+
+  .login-body::ng-deep.mat-tab-group.mat-primary .mat-ink-bar{
+    background-color: #c82424;
+  }
+
+  .login-body::ng-deep .example-form{
+      margin: 0 auto;
+  }
+
+  .login-body::ng-deep .mat-form-field.mat-focused .mat-form-field-label{
+      color:#c82424 ;
+  }
+
+  .login-body::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple{
+    background-color: #c82424;
+  }
+
+  .login-body::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{
+      background-color: transparent;
+  }
+
+  .login-body::ng-deep .mat-form-field-wrapper{
+      margin-top: 15px;
+  }
+
+  .login-btn{
+      margin: 0 auto;
+      display: flex;
+  }
+
+  .login-btn ::ng-deep .mat-button-wrapper{
+    padding: 5px;
+  }
+
+  .options-log{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .options-log .top-option .fb-log{
+      margin-bottom: 15px;
+  }
+
+  .options-log .bottom-option .apple-log{
+    margin-bottom: 15px;
+  }
