@@ -8,13 +8,15 @@ import { SignupComponent } from './signup/signup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatStepperModule} from '@angular/material/stepper';
+import { SigninComponent } from './signin/signin.component';
 
 
 @NgModule({
   declarations: [
     LoginPanelComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     CommonModule,

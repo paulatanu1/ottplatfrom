@@ -13,7 +13,7 @@ import { KidsComponent } from './kids/kids.component';
 import { ThrillerComponent } from './thriller/thriller.component';
 import { ComedyComponent } from './comedy/comedy.component';
 import { LoginPanelComponent } from './login-panel/login-panel.component'
-import { LoginComponent } from './login-panel/login/login.component';
+import { SigninComponent } from './login-panel/signin/signin.component';
 import { SignupComponent } from './login-panel/signup/signup.component';
 
 const routes: Routes = [
@@ -25,7 +25,7 @@ const routes: Routes = [
   { path: 'reactive', component:ReactiveformComponent},
   { path: 'login-panel', children:[
     { path:'' ,  component:LoginPanelComponent},
-    { path:'Login', component:LoginComponent},
+    { path:'Login', component:SigninComponent},
     { path:'Signup', component:SignupComponent}
   ]},
   {path:'movies', children:[

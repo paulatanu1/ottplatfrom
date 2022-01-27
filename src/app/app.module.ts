@@ -11,7 +11,6 @@ import { AppRoutingModule} from './app-routing.module';
 import { FooterComponent } from './footer/footer.component';
 import { PaymentPageComponent } from './payment-page/payment-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { SignupComponent } from './login/signup/signup.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { NgxSpinnerModule } from "ngx-spinner";
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
@@ -28,7 +27,9 @@ import { ChildComponent } from './child/child.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { DesignutilityService } from './appServices/designutility.service';
 import { LoginPanelComponent } from './login-panel/login-panel.component';
-import { LoginComponent } from './login-panel/login/login.component';
+import { SigninComponent } from './login-panel/signin/signin.component';
+import { SignupComponent } from './login-panel/signup/signup.component';
+// import { LoginComponent } from './login-panel/login/login.component';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatInputModule} from '@angular/material/input';
@@ -60,7 +61,6 @@ import {MatButtonModule} from '@angular/material/button';
      FooterComponent, 
      PaymentPageComponent, 
      AboutUsComponent, 
-     SignupComponent, 
      ReactiveformComponent, 
      WatchlistComponent, 
      MoviesComponent, 
@@ -72,7 +72,8 @@ import {MatButtonModule} from '@angular/material/button';
      DetactiveComponent, 
      ChildComponent, 
      LoginPanelComponent, 
-     LoginComponent, 
+     SigninComponent, 
+     SignupComponent
     ],
     exports:[
       BrowserAnimationsModule,
