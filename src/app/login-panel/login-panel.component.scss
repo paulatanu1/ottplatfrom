@@ -82,3 +82,111 @@
   .options-log .bottom-option .apple-log{
     margin-bottom: 15px;
   }
+
+  .log-other{
+    padding: 20px;
+  }
+  .fb-log button{
+    background: #4F575B;
+    box-shadow: 2px 4px 6px rgb(0 0 0 / 15%), -2px -2px 12px rgb(255 255 255 / 8%);
+    padding: 10px;
+    border-radius: 5px;
+    width:180px;
+  }
+
+  .google-log button{
+    background: #4F575B;
+    box-shadow: 2px 4px 6px rgb(0 0 0 / 15%), -2px -2px 12px rgb(255 255 255 / 8%);
+    padding: 10px;
+    border-radius: 5px;
+    width:180px;
+  }
+
+  .apple-log button{
+    background: #4F575B;
+    box-shadow: 2px 4px 6px rgb(0 0 0 / 15%), -2px -2px 12px rgb(255 255 255 / 8%);
+    padding: 10px;
+    border-radius: 5px;
+    width:180px;
+  }
+
+  .email-log button{
+        background: #4F575B;
+    box-shadow: 2px 4px 6px rgb(0 0 0 / 15%), -2px -2px 12px rgb(255 255 255 / 8%);
+    padding: 10px;
+    border-radius: 5px;
+    width:180px;
+  }
+
+  .email-log button span{
+    font-size: 20px;
+    margin-right: 5px;
+    transition:all 0.4s ease;
+  }
+  .email-log button:hover{
+    color: rgb(200 36 36 / 78%);
+    transition:all 0.4s ease;
+  }
+
+  .google-log button span{
+    font-size: 20px;
+    margin-right: 5px;
+    transition:all 0.4s ease;
+  }
+  .google-log button:hover{
+    color: rgb(200 36 36 / 58%);
+    transition:all 0.4s ease;
+  }
+
+  .fb-log button span{
+    font-size: 20px;
+    margin-right: 5px;
+    transition:all 0.4s ease;
+  }
+  .fb-log button:hover{
+    color: #0062cc;
+    transition:all 0.4s ease;
+  }
+
+  .apple-log button span{
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  .apple-log button:hover{
+    color: #ffffff;
+    transition:all 0.4s ease;
+  }
+
+.or{
+  margin: 20px 10px;
+    text-transform: uppercase;
+    font-size: .8em;
+    position: relative;
+}
+
+.devider{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 10px;
+    background: #4f575b;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    color: #ffffff;
+}
+
+.or::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  top: 50%;
+  background: #202226;
+  box-shadow: inset 0px 4px 4px rgb(0 0 0 / 75%), inset -2px -2px 2px #4e5154;
+  border-radius: 100px;
+  background: linear-gradient(
+320.66deg
+, #005EA3 14.75%, #11A8FD 84.81%);
+}

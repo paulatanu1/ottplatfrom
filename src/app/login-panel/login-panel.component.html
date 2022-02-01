@@ -2,35 +2,36 @@
     <app-header></app-header>
     <section class="content-wrapper body_wrapper">
         <div class="login-body">
-            <mat-tab-group animationDuration="1000ms">
+            <mat-tab-group animationDuration="1500ms">
                 <mat-tab label="First">
                     <form class="example-form">
                         <mat-form-field class="example-full-width" appearance="fill">
-                        <mat-label>Telephone</mat-label>
+                        <mat-label>Mobile Number</mat-label>
                         <span matPrefix>+91 &nbsp;</span>
-                        <input type="tel" matInput placeholder="555-555-1234">
+                        <input type="tel" name="number" matInput placeholder="123-456-7890" maxlength="10" [(ngModel)]="usernumber">
                         <mat-icon matSuffix>mode_edit</mat-icon>
                         </mat-form-field>
                     </form>
-                    <button mat-raised-button color="warn" class="login-btn" [routerLink]="['/login-panel/Login']">Login</button>
+                    <button (click)="clickme()" type="submit" mat-raised-button color="warn" class="login-btn" [routerLink]="['/login-panel/Login']">Login</button>
                     <div class="log-other">
-                        <p>or</p>
-
+                        <div class="or">
+                            <div class="devider">or</div>
+                        </div>
                         <div class="options-log">
                             <div class="top-option">
                                 <div class="fb-log">
-                                    <button mat-raised-button>Login with Facebook</button>
+                                    <button mat-raised-button><span class="icon-facebook"></span>Login with Facebook</button>
                                 </div>
                                 <div class="google-log">
-                                    <button mat-raised-button>Login with Google</button>
+                                    <button mat-raised-button><span class="icon-google-plus"></span>Login with Google</button>
                                 </div>
                             </div>
                             <div class="bottom-option">
                                 <div class="apple-log">
-                                    <button mat-raised-button>Login with Apple</button>
+                                    <button mat-raised-button><span class="icon-appleinc"></span>Login with Apple</button>
                                 </div>
                                 <div class="email-log">
-                                    <button mat-raised-button>Login with Email</button>
+                                    <button mat-raised-button><span class="icon-envelope"></span>Login with Email</button>
                                 </div>
                             </div>
                         </div>
