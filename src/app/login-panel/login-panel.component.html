@@ -8,11 +8,11 @@
                         <mat-form-field class="example-full-width" appearance="fill">
                         <mat-label>Mobile Number</mat-label>
                         <span matPrefix>+91 &nbsp;</span>
-                        <input type="tel" name="number" matInput placeholder="123-456-7890" maxlength="10" [(ngModel)]="usernumber">
+                        <input #userNumber type="tel" name="number" matInput placeholder="123-456-7890" maxlength="10" [(ngModel)]="usernumber">
                         <mat-icon matSuffix>mode_edit</mat-icon>
                         </mat-form-field>
                     </form>
-                    <button (click)="clickme()" type="submit" mat-raised-button color="warn" class="login-btn" [routerLink]="['/login-panel/Login']">Login</button>
+                    <button (click)="clickme(userNumber)" type="submit" mat-raised-button color="warn" class="login-btn" [routerLink]="['/login-panel/Login']">Login</button>
                     <div class="log-other">
                         <div class="or">
                             <div class="devider">or</div>
@@ -38,7 +38,15 @@
                     </div>
                 </mat-tab>
                 <mat-tab label="Second">
-                    <button [routerLink]="['/login-panel/Signup']">2nd</button>
+                    <form class="example-form">
+                        <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Enter Your Mobile Number</mat-label>
+                        <span matPrefix>+91 &nbsp;</span>
+                        <input type="tel" name="number" matInput placeholder="123-456-7890" maxlength="10" [(ngModel)]="mobnumber">
+                        <mat-icon matSuffix>mode_edit</mat-icon>
+                        </mat-form-field>
+                    </form>
+                    <button (click)="getnumber()" type="submit" mat-raised-button color="warn" class="login-btn" [routerLink]="['/login-panel/Signup']">Subscribe Now</button>
                 </mat-tab>
             </mat-tab-group>
         </div>

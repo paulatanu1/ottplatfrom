@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signin.component.scss']
 })
 export class SigninComponent implements OnInit {
-
   constructor() { }
-
+  number:any='';
   ngOnInit(): void {
+  }
+
+  pushNumber(data:any){
+    this.number.push(data);
   }
 
 }

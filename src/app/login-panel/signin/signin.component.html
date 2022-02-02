@@ -1,7 +1,7 @@
 <div class="main_wrapper">
-    <app-header></app-header>
+    <app-header (gettingNo)="pushNumber($event)"></app-header>
     <section class="content-wrapper">
-
+        <p>{{number}} </p>
     </section>
     <app-footer></app-footer>
 </div>
