@@ -24,6 +24,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  .icon-refresh:before {
+    content: "\f021";
+  }
+
   .icon-envelope:before {
     content: "\f0e0";
   }

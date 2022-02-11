@@ -190,3 +190,53 @@
 320.66deg
 , #005EA3 14.75%, #11A8FD 84.81%);
 }
+
+.otp-dilog{
+  text-align: center;
+    margin: 15px;
+    position: relative;
+    background: #4F575B;
+    box-shadow: 2px 4px 6px rgb(0 0 0 / 15%), -2px -2px 12px rgb(255 255 255 / 8%);
+    border-radius: 10px;
+}
+
+.otp-dilog h4{
+  color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.otp-dilog h4 span{
+  color: green;
+    margin-right: 10px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.otp-dilog p{
+  color: #f44336;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.otp-dilog .countdown{
+  color: darkseagreen;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.otp-dilog small{
+  color: #f44336;
+}
+
+.icon-refresh{
+  animation: mymove 2s infinite linear;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@keyframes mymove {
+  50% {transform: rotate(180deg);}
+}
