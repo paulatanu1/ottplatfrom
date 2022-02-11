@@ -35,6 +35,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { CountdownModule } from 'ngx-countdown';
+
+
 
 
 
@@ -52,7 +55,8 @@ import {MatButtonModule} from '@angular/material/button';
       MatTabsModule,
       MatInputModule,
       MatIconModule,
-      MatButtonModule
+      MatButtonModule,
+      CountdownModule
     ],
   declarations: [
      AppComponent,
@@ -81,7 +85,8 @@ import {MatButtonModule} from '@angular/material/button';
       MatTabsModule,
       MatInputModule,
       MatIconModule,
-      MatButtonModule
+      MatButtonModule,
+      CountdownModule
     ],
   bootstrap:    [ AppComponent ],
   providers:    [DesignutilityService],

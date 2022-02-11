@@ -3,7 +3,7 @@
     <section class="content-wrapper body_wrapper">
         <div class="login-body">
             <mat-tab-group animationDuration="1500ms">
-                <mat-tab label="First">
+                <mat-tab label="Login">
                     <form class="example-form">
                         <mat-form-field class="example-full-width" appearance="fill">
                         <mat-label>Mobile Number</mat-label>
@@ -12,7 +12,14 @@
                         <mat-icon matSuffix>mode_edit</mat-icon>
                         </mat-form-field>
                     </form>
-                    <button (click)="clickme()" type="submit" mat-raised-button color="warn" class="login-btn" [routerLink]="['/login-panel/Login']">Login</button>
+                    <button (click)="onAddmob();" type="submit" mat-raised-button color="warn" class="login-btn" >Login</button>
+                    <div class="otp-dilog" *ngIf="otpmsg">
+                        <h4 mat-dialog-title><span class="icon-check"></span>Otp is Sent to Your Mobile Number</h4>
+                        <p>{{usernumber}}</p>
+                        <!-- <countdown [config]="config"></countdown> -->
+                        <h5 class="countdown">Redirect to login page in <countdown [config]="config"></countdown><span class="icon-refresh"></span></h5>
+                        <small>Don't close this page</small>
+                    </div>
                     <div class="log-other">
                         <div class="or">
                             <div class="devider">or</div>
@@ -37,8 +44,17 @@
                         </div>
                     </div>
                 </mat-tab>
-                <mat-tab label="Second">
-                    <button [routerLink]="['/login-panel/Signup']">2nd</button>
+                <mat-tab label="Subscribe">
+                    <form class="example-form">
+                        <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Enter Your Mobile Number</mat-label>
+                        <span matPrefix>+91 &nbsp;</span>
+                        <input type="tel" name="number" matInput placeholder="123-456-7890" maxlength="10">
+                        <mat-icon matSuffix>mode_edit</mat-icon>
+                        </mat-form-field>
+                    </form>
+                    <
+                    <button type="submit" mat-raised-button color="warn" class="login-btn" [routerLink]="['/login-panel/Signup']">Subscribe Now</button>
                 </mat-tab>
             </mat-tab-group>
         </div>
