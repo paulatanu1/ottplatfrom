@@ -8,6 +8,14 @@ import { NgxSpinnerService } from "ngx-spinner";
 })
 export class MainContentComponent implements OnInit {
 
+  carouselItems:any=[
+    {imgsrc:"../../assets/images/slider-1.jpg"},
+    {imgsrc:"../../assets/images/slider-2.jpg"},
+    {imgsrc:"../../assets/images/slider-3.jpg"},
+    {imgsrc:"../../assets/images/slider-4.jpg"},
+    {imgsrc:"../../assets/images/slider-5.jpg"}
+  ]
+
   constructor(private spinner: NgxSpinnerService) { }
 
   ngOnInit(): void {
@@ -18,5 +26,7 @@ export class MainContentComponent implements OnInit {
       this.spinner.hide();
     }, 5000);
   }
+
+
 
 }
