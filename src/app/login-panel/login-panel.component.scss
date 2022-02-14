@@ -240,3 +240,8 @@
 @keyframes mymove {
   50% {transform: rotate(180deg);}
 }
+
+
+.login-body ::ng-deep .mat-tab-group .mat-tab-body-wrapper .mat-tab-body .mat-tab-body-content .mat-tab-body-content{
+  overflow: unset !important;
+}
