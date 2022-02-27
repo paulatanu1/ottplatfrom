@@ -36,6 +36,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { CountdownModule } from 'ngx-countdown';
+import { NgOtpInputModule } from  'ng-otp-input';
 
 
 
@@ -56,7 +57,8 @@ import { CountdownModule } from 'ngx-countdown';
       MatInputModule,
       MatIconModule,
       MatButtonModule,
-      CountdownModule
+      CountdownModule,
+      NgOtpInputModule
     ],
   declarations: [
      AppComponent,

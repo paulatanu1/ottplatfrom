@@ -1,7 +1,57 @@
 <div class="main_wrapper">
     <app-header></app-header>
-    <section class="content-wrapper">
-        <p>romance works!</p>
+    <section class="content-wrapper body_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="left_movie_section">
+                        <h2>Thriller Section</h2>
+                        <div>
+                            <ul class="tiles-list custom_scroll">
+                                <li *ngFor="let movie of movies">
+                                    <div class="movies-tiles" [ngClass]="{'hide-btn': movie.inWatch}">
+                                        <div class="mov-img">
+                                            <img src="{{movie.movImg}}" alt="movie image">
+                                        </div>
+                                        <h3>Movie Name:<span>{{movie.movTitle}}</span></h3>
+                                        <h4>Movie Details:<span>{{movie.movDec}}</span></h4>
+                                        <button class="add-btn" (click)="addFunction(movie)"><span class="icon-add"></span></button>
+                                        <div class="share-movie">
+                                            <button class="share"><span class="icon-share-alt"></span></button>
+                                            <div class="link-copied">
+                                                <span class="icon-facebook"></span>
+                                                <span class="icon-twitter"></span>
+                                                <span class="icon-content_copy"></span>
+                                            </div>
+                                            <!-- <div class="link-copy-msg">
+                                                <p><span class="icon-check"></span>Link Copied</p>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="text-watch">Watchlist</h2>
+                    <div class="custom_scroll2">
+                    <ng-template [ngIf]="movieSelected">
+                        <div class="watchlist_section" *ngFor="let watch of watchlist">
+                            <div class="image-watchlist">
+                                <img src="{{watch.movImg}}" alt="">
+                            </div>
+                            <div class="movie-desc">
+                                <h3>Movie Name:<span>{{watch.movTitle}}</span></h3>
+                                <h4>Movie Details:<span>{{watch.movDec}}</span></h4>
+                            </div>
+                            <button class="close-btn" *ngIf="onclickrmv" (click)="removeFunction(watch)"><span class="icon-close"></span></button>
+                        </div>
+                    </ng-template>
+                </div>
+                </div>
+            </div>
+        </div>
     </section>
     <app-footer></app-footer>
 </div>

@@ -1,0 +1,298 @@
+.body_wrapper{
+    background: #4f575b;
+}
+
+.content-wrapper{
+    min-height: 91vh;
+}
+
+.tiles-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tiles-list li{
+    list-style: none;
+    width: 33%;
+    margin-bottom: 15px;
+}
+
+.movies-tiles .mov-img{
+    width: 200px;
+    overflow: hidden;
+    height: auto;
+}
+
+.movies-tiles .mov-img img{
+    // width: 100%;
+    width: -webkit-fill-available;
+    border-radius: 10px;
+}
+
+.movies-tiles{
+    background: #4F575B;
+    box-shadow: 2px 4px 6px rgb(0 0 0 / 15%), -2px -2px 12px rgb(255 255 255 / 8%);
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.movies-tiles h3{
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.movies-tiles h4{
+    color: #e3ecff;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.movies-tiles .add-btn{
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(255 255 255 / 30%);
+    opacity: 0.9;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movies-tiles .add-btn span{
+    background: #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C82424;
+    transition: all 0.6s ease;
+}
+
+.movies-tiles .add-btn span:hover{
+    background: #C82424;
+    color: #ffffff;
+}
+
+.movies-tiles .share-movie .share{
+    position: absolute;
+    top: 65px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(255 255 255 / 30%);
+    opacity: 0.9;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movies-tiles .share-movie .share span{
+    background: #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C82424;
+    transition: all 0.6s ease;
+}
+
+.movies-tiles .share-movie .share span:hover{
+    background: #C82424;
+    color: #ffffff;
+}
+
+.link-copied{
+    padding: 2px 5px;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    background: rgb(50 43 43 / 70%);
+    display: none;
+    transition: all 0.6s ease;
+}
+
+.link-copied span{
+    padding: 0 5px;
+    color: #e3ecff;
+}
+
+.link-copied span:hover{
+    color:#C82424 ;
+}
+
+.movies-tiles .share-movie:hover .link-copied{
+    display: block;
+}
+
+.link-copy-msg{
+    background: rgb(74 67 67 / 45%);
+    padding: 5px;
+    border-radius: 6px;
+    text-align: center;
+    position: absolute;
+    top: 143px;
+    width: 91%;
+}
+
+.link-copy-msg p{
+    margin: 0;
+    color: #e3ecff;
+}
+
+.link-copy-msg p span{
+    color: #5dd95d;
+    padding-right: 10px;
+}
+
+.watchlist_section{
+    display: flex;
+    align-items: center;
+    background: #4F575B;
+    box-shadow: 2px 4px 6px rgb(0 0 0 / 15%), -2px -2px 12px rgb(255 255 255 / 8%);
+    margin: 20px 5px;
+    padding: 10px;
+    border-radius: 7px;
+    position: relative;
+}
+
+.watchlist_section .image-watchlist{
+    width: 85px;
+    height: 73px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.watchlist_section .image-watchlist img{
+    width: 100%;
+    height: 73px;
+}
+
+.movie-desc h3{
+    color: #c82424;
+    font-size: 15px;
+}
+
+.movie-desc h3 span{
+    color: #ffffff;
+    font-size: 15px;
+    padding-left: 5px
+}
+
+.movie-desc h4{
+    color: #c82424;
+    font-size: 15px;
+}
+
+.movie-desc h4 span{
+    color: #ffffff;
+    font-size: 15px;
+    padding-left: 5px
+}
+
+.close-btn{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    border: none;
+    background: #4F575B;
+    box-shadow: 2px 4px 6px rgb(0 0 0 / 15%), -2px -2px 12px rgb(255 255 255 / 8%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn .icon-close{
+    font-size: 11px;
+    color: #ffffff;
+}
+
+.close-btn .icon-close:hover{
+    color:#c82424 ;
+}
+
+.custom_scroll{
+    max-height: calc(100vh - 220px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 5px;
+  }
+
+.left_movie_section h2{
+    text-align: center;
+    padding: 10px 0;
+    color: #ffffff;
+}
+
+.left_movie_section h2:hover{
+    color:#c82424;
+    transition:all 0.6s ease;
+    cursor: pointer;
+}
+
+.text-watch{
+    text-align: center;
+    padding: 10px 0;
+    color: #ffffff;
+}
+.text-watch:hover{
+    color:#c82424;
+    transition:all 0.6s ease;
+    cursor: pointer;
+}
+
+.custom_scroll2{
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 5px;
+  }
+
+.custom_scroll2::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom_scroll2::-webkit-scrollbar{
+    width: 4px;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom_scroll2::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom_scroll2::-webkit-scrollbar-track{
+    background-color: #4F575B;
+  }
+  
+  .custom_scroll2:hover::-webkit-scrollbar{
+    background-color: #4F575B;
+  }
+  
+  .custom_scroll2:hover::-webkit-scrollbar-thumb{
+    background-color: #414042;
+  }
