@@ -4,18 +4,20 @@
         <div class="login-body">
             <mat-tab-group animationDuration="1500ms">
                 <mat-tab label="Login">
-                    <form class="example-form">
+                    <form class="example-form" [formGroup]="userform" (ngSubmit)="onsubmit()">
                         <mat-form-field class="example-full-width" appearance="fill">
                         <mat-label>Mobile Number</mat-label>
                         <span matPrefix>+91 &nbsp;</span>
-                        <input type="tel" name="number" matInput placeholder="123-456-7890" maxlength="10" [(ngModel)]="usernumber">
+                        <input autocomplete="off" minlength="10" type="tel" name="number" matInput placeholder="123-456-7890" maxlength="10" formControlName="userNo">
                         <mat-icon matSuffix>mode_edit</mat-icon>
                         </mat-form-field>
                     </form>
-                    <button (click)="onAddmob();" type="submit" mat-raised-button color="warn" class="login-btn" >Login</button>
+                    <button [disabled]="!userform.valid"  (click)="onAddmob();" type="submit" mat-raised-button color="warn" class="login-btn" >Login</button>
+                    
+                
                     <div class="otp-dilog" *ngIf="otpmsg">
                         <h4 mat-dialog-title><span class="icon-check"></span>Otp is Sent to Your Mobile Number</h4>
-                        <p>{{usernumber}}</p>
+                        <p>{{userform.value.userNo}}</p>
                         <!-- <countdown [config]="config"></countdown> -->
                         <h5 class="countdown">Redirect to login page in <countdown [config]="config"></countdown><span class="icon-refresh"></span></h5>
                         <small>Don't close this page</small>
