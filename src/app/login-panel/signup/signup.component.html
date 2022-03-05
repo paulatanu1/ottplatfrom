@@ -12,7 +12,7 @@
                   <mat-label>Name</mat-label>
                   <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
                 </mat-form-field>
-                <div>
+                <div class="btn-mat">
                   <button mat-button matStepperNext>Next</button>
                 </div>
               </form>
@@ -24,7 +24,7 @@
                   <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
                          required>
                 </mat-form-field>
-                <div>
+                <div class="btn-mat btn-custom">
                   <button mat-button matStepperPrevious>Back</button>
                   <button mat-button matStepperNext>Next</button>
                 </div>
@@ -33,7 +33,7 @@
             <mat-step>
               <ng-template matStepLabel>Done</ng-template>
               <p>You are now done.</p>
-              <div>
+              <div class="btn-mat btn-custom">
                 <button mat-button matStepperPrevious>Back</button>
                 <button mat-button (click)="stepper.reset()">Reset</button>
               </div>
