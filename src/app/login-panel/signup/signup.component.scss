@@ -1,0 +1,30 @@
+.body_wrapper{
+    background: #4f575b;
+}
+
+.content-wrapper{
+    min-height: 100vh;
+    background: #4f575b;
+}
+
+::ng-deep .mat-stepper-horizontal, .mat-stepper-vertical{
+    background: #4f575b;
+}
+
+::ng-deep .btn-mat button{
+    background: #4F575B;
+    box-shadow: 2px 4px 6px rgb(0 0 0 / 15%), -2px -2px 12px rgb(255 255 255 / 8%);
+    width: 105px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.btn-custom{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
