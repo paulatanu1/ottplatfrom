@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-detactive',
@@ -13,16 +14,27 @@ export class DetactiveComponent implements OnInit {
   movDec:string='';
   onclickrmv:boolean=false;
   movImg:any='';
+  closeResult: string = '';
   movies:any=[
-    {movImg:'../assets/images/thriller1.jpg',movTitle:"ABC",movDec:"this is decription",inWatch:false},
-    {movImg:'../assets/images/thriller2.jpg',movTitle:"DEF",movDec:"this is decription2",inWatch:false},
-    {movImg:'../assets/images/thriller3.jpg',movTitle:"GHI",movDec:"this is decription3",inWatch:false},
-    {movImg:'../assets/images/thriller4.jpg',movTitle:"text",movDec:"this is decription3",inWatch:false},
-    {movImg:'../assets/images/thriller5.jpg',movTitle:"text2",movDec:"this is decription3",inWatch:false},{movImg:'../assets/images/thriller6.jpg',movTitle:"text",movDec:"this is decription3",inWatch:false}, //array2
-  ]
+    {movImg:'../assets/images/thriller1.jpg',movTitle:"Dracula Sir",movDec:"this is decription",inWatch:false},
+    {movImg:'../assets/images/thriller2.jpg',movTitle:"Byomkesh Gotro",movDec:"this is decription2",inWatch:false},
+    {movImg:'../assets/images/thriller3.jpg',movTitle:"Mukhosh",movDec:"this is decription3",inWatch:false},
+    {movImg:'../assets/images/thriller4.jpg',movTitle:"Barna Porichoy",movDec:"this is decription3",inWatch:false},
+    {movImg:'../assets/images/thriller5.jpg',movTitle:"Chokher Bali",movDec:"this is decription3",inWatch:false},
+    {movImg:'../assets/images/thriller6.jpg',movTitle:"Rosogolla",movDec:"this is decription3",inWatch:false}, //array2
+  ];
+  watchlist1:any=[];
   watchlist:any=[]; //array1
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
+
+  open(content:any) {
+    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  } 
 
   ngOnInit(): void {
   }
@@ -45,6 +57,17 @@ export class DetactiveComponent implements OnInit {
     );
     this.watchlist.splice(index, 1);
 
-
 }
+
+
+private getDismissReason(reason: any): string {
+  if (reason === ModalDismissReasons.ESC) {
+    return 'by pressing ESC';
+  } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+    return 'by clicking on a backdrop';
+  } else {
+    return  `with: ${reason}`;
+  }
+}
+
 }

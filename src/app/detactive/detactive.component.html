@@ -46,6 +46,7 @@
                                 <h4>Movie Details:<span>{{watch.movDec}}</span></h4>
                             </div>
                             <button class="close-btn" *ngIf="onclickrmv" (click)="removeFunction(watch)"><span class="icon-close"></span></button>
+                            <a (click)="open(mymodal1)" class="watch-button" href="javascript:void(0)"><span class="icon-arrow-right2"></span></a>
                         </div>
                     </ng-template>
                 </div>
@@ -55,3 +56,18 @@
     </section>
     <app-footer></app-footer>
 </div>
+
+<ng-template #mymodal1 let-modal class="watch-screen">
+    <div class="modal-header custom-head">
+        <!-- <h4 class="modal-title" id="modal-basic-title">Bootstrap Modal</h4> -->
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body plan-bg" *ngFor="let watch of watchlist">
+          <h3>{{watch.movTitle}}</h3>
+        <div class="">
+            <iframe class="mx-auto" width="830" height="487" src="https://www.youtube.com/embed/d9M-YFxikvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+</ng-template>
