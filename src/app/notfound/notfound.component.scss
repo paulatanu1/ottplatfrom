@@ -1,0 +1,114 @@
+.main_wrapper{
+    margin-top: 0;
+    background-color: #141F39;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    // z-index: -100;
+}
+
+.inner-bg{
+    background-image: url("../../assets/images/Background.svg");
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    background-position: center;
+    // z-index: -98;
+}
+
+.bg-not-found{
+position: relative;
+// z-index: -99;
+}
+
+.text-area{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    // z-index: -97;
+}
+
+.text-area::after{
+    content: '';
+    background-image: url("../../assets/images/right-art.svg");
+    position: absolute;
+    right: 2rem;
+    top: 10vh;
+    width: 434px;
+    height: 65vh;
+    background-repeat: no-repeat;
+    // z-index: -96;
+}
+
+.text-area::before{
+    content: '';
+    background-image: url("../../assets/images/left-art.svg");
+    position: absolute;
+    left: 11rem;
+    top: 7rem;
+    width: 365px;
+    height: 65vh;
+    background-repeat: no-repeat;
+}
+
+.text-inner {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    transform: translateY(-12%);
+    z-index: 9;
+}
+
+.text-inner .left-text{
+    font-size: 300px;
+    color: #ffffff;
+    font-weight: 700;
+    padding-right: 5rem;
+}
+
+.text-inner .right-text{
+    font-size: 300px;
+    color: #ffffff;
+    font-weight: 700;
+    padding-left: 4rem;
+}
+
+.bottom-text-area{
+    position: absolute;
+    bottom: 5rem;
+    text-align: center;
+    width: 100%;
+    z-index: 99;
+}
+
+.bottom-text-area h4{
+    color: #ffffff;
+    font-size: 63px;
+    font-weight: 700;
+}
+
+.bottom-text-area P{
+    color: #ffffff;
+}
+
+.btn-home{
+    background: #4F575B;
+    box-shadow: 2px 4px 6px rgb(0 0 0 / 15%), -2px -2px 12px rgb(255 255 255 / 8%);
+    width: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.btn-home span{
+    padding-right: 10px;
+}

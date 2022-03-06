@@ -15,6 +15,7 @@ import { ComedyComponent } from './comedy/comedy.component';
 import { LoginPanelComponent } from './login-panel/login-panel.component'
 import { SigninComponent } from './login-panel/signin/signin.component';
 import { SignupComponent } from './login-panel/signup/signup.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
   { path: 'home', component: MainContentComponent },
@@ -37,7 +38,8 @@ const routes: Routes = [
     {path: 'kids', component:KidsComponent},
     {path: 'thriller', component:ThrillerComponent},
     {path: 'comedy', component:ComedyComponent}
-  ]}
+  ]},
+  { path: '**', component: NotfoundComponent }
 ];
 
 

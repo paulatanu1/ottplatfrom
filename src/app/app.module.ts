@@ -37,6 +37,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { CountdownModule } from 'ngx-countdown';
 import { NgOtpInputModule } from  'ng-otp-input';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 
@@ -79,7 +80,8 @@ import { NgOtpInputModule } from  'ng-otp-input';
      ChildComponent, 
      LoginPanelComponent, 
      SigninComponent, 
-     SignupComponent
+     SignupComponent, 
+     NotfoundComponent
     ],
     exports:[
       BrowserAnimationsModule,
