@@ -18,7 +18,8 @@ export class ThrillerComponent implements OnInit {
     {movImg:'../assets/images/thriller2.jpg',movTitle:"DEF",movDec:"this is decription2",inWatch:false},
     {movImg:'../assets/images/thriller3.jpg',movTitle:"GHI",movDec:"this is decription3",inWatch:false},
     {movImg:'../assets/images/thriller4.jpg',movTitle:"text",movDec:"this is decription3",inWatch:false},
-    {movImg:'../assets/images/thriller5.jpg',movTitle:"text2",movDec:"this is decription3",inWatch:false},{movImg:'../assets/images/thriller6.jpg',movTitle:"text",movDec:"this is decription3",inWatch:false}, //array2
+    {movImg:'../assets/images/thriller5.jpg',movTitle:"text2",movDec:"this is decription3",inWatch:false},
+    {movImg:'../assets/images/thriller6.jpg',movTitle:"text",movDec:"this is decription3",inWatch:false}, //array2
   ]
   watchlist:any=[]; //array1
 

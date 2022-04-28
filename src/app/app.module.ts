@@ -59,7 +59,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
       MatIconModule,
       MatButtonModule,
       CountdownModule,
-      NgOtpInputModule
+      NgOtpInputModule,
+
     ],
   declarations: [
      AppComponent,
@@ -81,7 +82,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
      LoginPanelComponent, 
      SigninComponent, 
      SignupComponent, 
-     NotfoundComponent
+     NotfoundComponent,
     ],
     exports:[
       BrowserAnimationsModule,
