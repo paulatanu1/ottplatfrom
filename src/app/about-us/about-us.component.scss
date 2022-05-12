@@ -1,26 +1,81 @@
 .about-us-body{
     margin-top: 83px !important;
-    width: 500px;
+    width: 1170px;
     margin: 0 auto;
 }
-
-input.ng-invalid.ng-touched,
-select.ng-invalid.ng-touched{
-    border: 1px solid red;
+.about-me{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.saveable{
-    color: red;
+.about-left,.about-right{
+    width: 49%;
 }
 
-.modified{
-    font-style: italic;
+.about-left{
+    border:0.0625rem solid rgb(59 66 69 / 46%);
+    background-color:rgb(79 87 91) ;
+    box-shadow: 6px 6px 12px #3d3e3e, -6px -6px 12px #252525 !important;
+    border-radius: 63% 37% 30% 70%/50% 45% 55% 50%;
+    padding: 1rem;
+    height: 540px;
+    width: 540px;
 }
 
-.specia{
-    background: chartreuse;
+.about-left img{
+    border-radius: 63% 37% 30% 70%/50% 45% 55% 50%;
+    width: 100%;
+    height: auto;
 }
 
-.card{
-    width: 24%;
+.about-right{
+    padding: 20px 0;
+}
+
+.about-right h3{
+    margin-bottom: 15px !important;
+    letter-spacing: 2px;
+    font-family: 'Macondo', cursive;
+}
+
+.about-right p{
+    text-align: justify;
+    line-height: 42px;
+}
+
+.about-right p a{
+    color: #ffffff;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.about-right p a:hover{
+    text-decoration: underline;
+}
+
+.follow-btn{
+    margin-top: 80px;
+}
+
+.follow-btn ul{
+    display: flex;
+    justify-content: center;
+}
+
+.follow-btn ul li{
+    padding: 0 15px;
+    list-style: none;
+}
+
+.follow-btn ul li a{
+    font-size: 25px;
+}
+
+.follow-btn ul li a i{
+    color: #ffffff;
+}
+
+.contact-us-form{
+    margin-top: 35px;
 }
